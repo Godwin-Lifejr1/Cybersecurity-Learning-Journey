@@ -112,6 +112,27 @@ At one point, `/etc/resolv.conf` showed `nameserver 10.154.199.138`, while the l
 
 Evidence was reviewed from the learner's terminal and Wireshark screenshots during the lab. The capture contained four DNS packets. The raw PCAP is retained locally and is not included in this repository. This report documents the observed output; it does not claim that every networking topic in Module 1 is complete.
 
+## Follow-up: Gateway ping and neighbour-table observation
+
+A later learner screenshot showed the following command and result:
+
+```bash
+ping -c 4 10.0.2.2
+```
+
+- 4 packets transmitted, 4 received, 0% packet loss.
+- The displayed round-trip times were approximately 0.9–6.8 ms.
+
+The learner then ran `ip neigh`. The IPv4 gateway entry remained:
+
+```text
+10.0.2.2 dev eth0 lladdr 52:54:00:12:35:00 STALE
+```
+
+The screenshot also showed IPv6 neighbour entries marked `router STALE`.
+
+Interpretation: the gateway responded successfully to ICMP echo requests. `STALE` is a normal neighbour-cache state meaning the cached link-layer mapping has not recently been confirmed as reachable; it does not mean the gateway is offline. Linux may continue using a STALE entry and transition its state as traffic and neighbour reachability checks occur. The IPv6 entries use IPv6 Neighbor Discovery rather than IPv4 ARP.
+
 ## Next steps
 
 - Continue networking fundamentals: ARP and neighbour tables, TCP/UDP sockets, and packet analysis.
