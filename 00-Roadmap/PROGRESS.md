@@ -15,7 +15,7 @@ Update this file after each lesson or lab. Do not mark work complete before prac
 | PY-001 | Python fundamentals | Not started | — | Begin after Linux fundamentals. |
 | SEC-001 | Security principles and lab safety | In progress | — | Lab safety and authorisation boundaries reviewed; continue using isolated or explicitly authorised systems. |
 
-## Status definitions
+| 2026-11-13 | NET-007: Wireshark DNS display filtering | Applied the Wireshark display filter `dns` to an existing `dns-lab.pcap` capture and confirmed the DNS query/response packets. Began learning the packet-list, packet-details, and raw-bytes panes and how a DNS transaction maps across IPv4, UDP, and DNS layers. | Successfully isolated DNS traffic in Wireshark and identified the query for `korlinktech.com` and the response addresses. | Inspect the DNS query and response fields in detail, then continue to additional Wireshark display filters and packet-analysis exercises. |\n\n## Status definitions
 - **Not started** — no lesson or practical work yet.
 - **In progress** — learning has begun; practical verification may still be pending.
 - **Blocked** — waiting on a dependency or troubleshooting issue.
