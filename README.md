@@ -1,56 +1,69 @@
 # Cybersecurity Learning Journey
 
-A structured, hands-on portfolio documenting my development across networking, Linux, Python, defensive security, ethical hacking, cloud security, and practical cybersecurity projects.
+A hands-on cybersecurity portfolio documenting my progression from networking fundamentals through defensive security, ethical hacking, incident response, cloud security, and practical security engineering.
 
-## About this repository
+## Career objective
 
-This repository is the central index for my cybersecurity training. It records what I study, the labs I complete, the evidence I collect, the issues I troubleshoot, and the lessons I learn.
+Build demonstrable skills for entry-level and junior cybersecurity roles, especially SOC Analyst, Cybersecurity Analyst, Security Operations, and Network Security positions.
+
+This repository prioritises evidence over claims. Lessons are not marked complete until practical work, review, and documentation support the result.
+
+## How this portfolio is built
+
+**Learn -> Practise -> Troubleshoot -> Document -> Build -> Review -> Publish**
+
+The repository separates learning notes from practical evidence and portfolio projects so a recruiter can see both the knowledge and the work.
+
+## Repository map
+
+| Section | Purpose |
+|---|---|
+| [00-Roadmap](00-Roadmap/ROADMAP.md) | Full learning path and milestones |
+| [Career Portfolio Plan](00-Roadmap/CAREER-PORTFOLIO-PLAN.md) | How the learning is being converted into employable evidence |
+| [01-Networking](01-Networking/README.md) | Networking fundamentals |
+| [03-Projects](03-Projects/README.md) | Portfolio-grade projects |
+| [04-Evidence](04-Evidence/README.md) | Practical evidence index |
+| [05-Reports](05-Reports/LAB-REPORT-TEMPLATE.md) | Reproducible technical lab reports |
+| [07-Career](07-Career/README.md) | Interview and career readiness |
+| [Progress Tracker](00-Roadmap/PROGRESS.md) | Verified learning progress |
+
+## Current portfolio evidence
+
+### DNS Packet Capture and Wireshark Analysis
+Captured DNS traffic from my own Kali VM, saved a local PCAP, and analysed DNS queries and responses in Wireshark.
+
+[Read the DNS report](05-Reports/NET-007-DNS-Packet-Capture.md)
+
+### TCP Connection Establishment and Termination
+Captured and analysed a TCP three-way handshake, payload/ACK traffic, FIN-based termination, and an RST flow. Also documented why successful TCP communication does not automatically mean the application request succeeds.
+
+[Read the TCP report](05-Reports/NET-008-TCP-Connection-Lifecycle.md)
 
 ## Learning principles
 
-- Learn the concept before using the tool.
+- Understand the concept before using the tool.
 - Practise only on systems I own or have explicit permission to test.
-- Record commands, expected results, actual results, and troubleshooting steps.
-- Never publish passwords, API keys, tokens, personal data, or sensitive network details.
-- Use sanitised screenshots and sample data in public reports.
-- Be honest about results and distinguish observed evidence from assumptions.
+- Record expected results, actual results, troubleshooting, and conclusions.
+- Distinguish observed evidence from assumptions.
+- Never publish passwords, API keys, tokens, private keys, or sensitive personal data.
+- Sanitise screenshots and network information before publication.
 
-## Roadmap
+## Portfolio standard
 
-1. Networking fundamentals
-2. Linux fundamentals and administration
-3. Python and automation fundamentals
-4. Security foundations and system hardening
-5. Network analysis and troubleshooting
-6. Defensive security and incident response
-7. Web security and ethical hacking in authorised labs
-8. Vulnerability assessment and reporting
-9. Cloud, identity, and access security
-10. Capstone projects and portfolio review
+A completed project should show:
 
-## Repository guide
-
-- [Learning roadmap](00-Roadmap/ROADMAP.md)
-- [Progress tracker](00-Roadmap/PROGRESS.md)
-- [Networking module](01-Networking/README.md)
-- [Lab report template](05-Reports/LAB-REPORT-TEMPLATE.md)
-- [Safety and lab rules](05-Reports/SAFETY-AND-ETHICS.md)
-
-## Lab report standard
-
-For each lab, document:
-
-1. Objective and learning outcomes
-2. Lab environment and authorised scope
-3. Tools and commands used
-4. Expected and actual results
-5. Evidence (sanitised output or screenshots)
-6. Troubleshooting and resolution
-7. Key takeaways and next steps
-
-## Progress
-
-This portfolio is being built progressively alongside a guided course. A topic is marked complete only after the relevant practice and review are finished.
+1. Objective and scope
+2. Lab architecture
+3. Tools and methodology
+4. Practical implementation or investigation
+5. Evidence
+6. Analysis and findings
+7. Troubleshooting
+8. Security implications
+9. Remediation or improvement
+10. Limitations
+11. Reproduction instructions
+12. Lessons learned
 
 ## Author
 
